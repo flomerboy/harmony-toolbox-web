@@ -18,6 +18,38 @@
 }
 
 @font-face {
+  font-family: "Gooper-Medium";
+  font-weight: 500;
+  src: url("assets/fonts/Gooper7-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gooper-Medium";
+  font-weight: 500;
+  src: url("assets/fonts/Gooper7-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Gooper-Medium";
+  font-weight: 500;
+  src: url("assets/fonts/Gooper7-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gooper-Light";
+  font-weight: 500;
+  src: url("assets/fonts/Gooper7-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Gooper-Light";
+  font-weight: 500;
+  src: url("assets/fonts/Gooper7-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Gooper-Light";
+  font-weight: 500;
+  src: url("assets/fonts/Gooper7-Light.otf") format("opentype");
+}
+
+@font-face {
   font-family: "Gooper-Regular";
   src: url("assets/fonts/Gooper7-Regular.woff") format("woff");
 }
@@ -26,33 +58,169 @@
   src: url("assets/fonts/Gooper7-Regular.woff2") format("woff2");
 }
 
+    html,body,h1,h2,h3,div,p,img {margin-block-start: 0px;margin-block-end: 0px;margin-inline-start: 0px;margin-inline-end: 0px;}
 
+        html {
+            overflow-x: hidden;
+        }
         body{
             margin:0 auto;
             padding:0;
-            background-color: #107113;
+            background-color: #FFFEF5;
             color: #fffcdb;
             text-align: center;
         }
-        p {
+        h1 {
             position: relative;
-            font-size: 2rem;
+            font-size: 44px;
             text-align: center;
-            max-width: 600px;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
+            color: #107113;
+            margin: auto;
+            width: 500px;
+            max-width: 90vw;
+            font-family:"Gooper-Medium";
+            font-weight: 500;
+        }
+        h2 {
+            position: relative;
+            font-size: 30px;
+            text-align: center;
+            color: #107113;
+            margin: auto;
+            width: 500px;
+            max-width: 90vw;
+            font-family:"Gooper-Medium";
+            font-weight: 500;
+        }
+        h3 {
+            position: relative;
+            font-size: 30px;
+            text-align: left;
+            color: #107113;
+            margin: auto;
+            width: 500px;
+            max-width: 90vw;
+            font-family:"Gooper-Light";
+            font-weight: 500;
+        }
+        p {
+            color: #052406;
+            position: relative;
+            font-size: 18px;
+            text-align: left;
+            width: 375px;
+            max-width: 90vw;
             font-family:"Gooper-Regular";
         }
+
+        sup {
+            font-size: 18px;
+        }
+        span.special{
+            font-feature-settings: 'salt' on, 'swsh' on;
+        }
         #logo {
-            width:170px;
+            width:150px;
+        }
+
+        #hero {
+            border-radius: 25px;
+            width: 900px;
+            max-width: 90vw;
+        }
+
+        #picking-flower {
+            width: 200px;
+        }
+        .spacer-lg {
+            height:150px;
+            width: 150px;
         }
         .spacer {
             height:100px;
+            width:100px;
         }
+        .spacer-medium {
+            height:75px;
+            width:75px;
+        }
+        .spacer-small {
+            height:50px;
+            width:50px;
+        }
+        .spacer-extra-small {
+            height:20px;
+            width:20px;
+        }
+
+        .content-row {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            /* max-width: 90vw; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .value-props img{
+            height: 200px;
+        }
+
+        .value-props p {
+            width: 260px;
+            color: #107113;
+            font-weight: 500;
+            font-family: 'Gooper-Medium';
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #product-details img {
+            width: 800px;
+            max-width: 90vw;
+        }
+
+        #call-to-action img {
+            width: 650px;
+            max-width: 90vw;
+        }
+
+        #call-to-action h2 {
+            text-align: left;
+        }
+
+        #call-to-action p {
+            width: 425px;
+        }
+        
+        #call-to-action .content-column {
+            align-items: flex-start;
+        }
+
+        .shopify-buy__btn {
+            background-color: #107113;
+            color: #FFFEF5;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            border-style: none;
+            font-weight: 600;
+            font-family: "BrownLLSub-Bold";
+            letter-spacing: 1px;
+            font-size: 16px;
+            height:100%;
+            text-transform: uppercase;
+            -webkit-appearance: none;
+        }
+
         #mc_embed_signup_scroll {
             display: flex;
             justify-content: center;
@@ -60,12 +228,10 @@
         }
 
         /* button */
-        #mc-embedded-subscribe {
+        #mc-embedded-subscribe{
             padding: 12px 18px;
             border-radius: 8px;
             border-style: none;
-            background: #fffcdb;
-            color: #107113;
             font-weight: 600;
             font-family: "BrownLLSub-Bold";
             letter-spacing: 1px;
@@ -76,13 +242,28 @@
         input {
             border-radius: 8px;
             border-style: none;
-            background: #fffcdb;
+            background: #FFFEF5;
+            border: 2px solid #107113;
             margin-right: 8px;
             padding: 16px;
             height: 43.333px;
             font-family: "BrownLLSub-Bold";
             letter-spacing: 1px;
             font-size: 16px;
+            -webkit-appearance: none;
+        }
+
+        .button {
+            background-color: #107113;
+            color: #fffcdb;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border-style: none;
+            font-weight: 600;
+            font-family: "BrownLLSub-Bold";
+            letter-spacing: 1px;
+            font-size: 16px;
+            height:100%;
             -webkit-appearance: none;
         }
 
@@ -93,6 +274,9 @@
                 padding-right: 6vw;
                 font-size: 1.2rem;
             }
+            .button {
+                margin-left: 6vw;
+            }
             #logo {
                 width: 25vw;
             }
@@ -102,18 +286,268 @@
             input { 
                 width:40vw
             }
+            .content-row {
+                flex-direction: column;
+            }
         }
 
     </style>
+    <div class="spacer-small"></div>
+    <img id="logo" src="assets/images/logo-beta.png" alt="a logo that says harmony toolbox in a rounded rectangle">
+    <div class="spacer-small"></div>
+    <img id="hero" src="assets/images/hero.jpg" />
+    <div class="spacer-small"></div>
+    <h1><span class="special">B</span>ring clarity to your personal values</h1>
+    <div class="spacer-lg"></div>
+    <div class="content-row">
+        <img id="picking-flower" src="assets/images/illo-picking-flower.png" />
+        <div class="spacer-small"></div>
+        <p>
+            Personal values affect us every day but can be hard to articulate. Once you do manage to articulate them, it&apos;s still hard to embody them fully. <br /><br />
+            The tools in Harmony Toolbox make it easier and more fun to articulate your values, and then weave them into your daily life.
+        </p>
+    </div>
+    <div class="spacer-lg"></div>
+    <div class="content-row value-props">
+        <div class="content-column">
+            <img src="assets/images/illo-time.png" alt="" />
+            <div class="spacer-small"></div>
+            <p class=""><span class="special">F</span>eel great about how you spend your time.</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="content-column">
+            <img src="assets/images/illo-window.png" alt="" />
+            <div class="spacer-small"></div>
+            <p class=""><span class="special">P</span>ut more joy in your daily life.</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="content-column">
+            <img src="assets/images/illo-can.png" alt="" />
+            <div class="spacer-small"></div>
+            <p class=""><span class="special">M</span>ake hard decisions with confidence.</p>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+    <section id="product-details">
+        <img src="assets/images/sample-book.png" alt="">
+        <div class="spacer-small"></div>
+        <h2><span class="special">U</span>ncover and refine your values with the workbook</h2>
+        <div class="spacer-lg"></div>
+        <img src="assets/images/sample-card.png" alt="">
+        <div class="spacer-small"></div>
+        <h2><span class="special">T</span>ranslate those values into chunks of time with Activity Cards</h2>
+        <div class="spacer-lg"></div>
+        <img src="assets/images/sample-calendar.png" alt="">
+        <div class="spacer-small"></div>
+        <h2><span class="special">S</span>ee how your values show up in your daily life with the calendar</h2>
+    </section>
+    <div class="spacer-lg"></div>
+    <section id="call-to-action">
+        <div class="content-row">
+            <img src="assets/images/what-do-i-get.png" alt="">
+            <div class="spacer"></div>
+            <div class="content-column">
+                <h2><span class="special">H</span>armony Toolbox 1<sup>st</sup> edition Pre-order</h2>
+                <h3>$24.99</h3>
+                <div class="spacer-extra-small"></div>
+                <p class="">A set of tools to bring clarity to your personal values and bring more joy and intention into your daily life. Limited edition of 20.
+                    <br /><br />
+                    <b>This is a Preorder that will ship in early January. Handmade by yours truly.</b>
+                    <br /><br />
+                    What&apos;s Inside?<br />
+                    - 1 Uncovering Your Values workbook (76 pages)<br />
+                    - 1 Decision Helper workbook (16 pages)<br />
+                    - 12 monthly calendars<br />
+                    - 10 activity cards<br />
+                    - Dedicated 1-on-1 support
+                </p>
+                <div class="spacer-extra-small"></div>
+                <div id='product-component-1640334593621'></div>
+                <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                    } else {
+                    loadScript();
+                    }
+                } else {
+                    loadScript();
+                }
+                function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                    domain: 'harmony-toolbox.myshopify.com',
+                    storefrontAccessToken: 'c640f32accca3dbd21de7a6c0d2af74e',
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                        id: '7467708088538',
+                        node: document.getElementById('product-component-1640334593621'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                "product": {
+                    "iframe":false,
+                    "styles": {
+                    "product": {
+                        "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px"
+                        }
+                    },
+                    "button": {
+                        "font-family": "Roboto, sans-serif",
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        ":hover": {
+                        "background-color": "#0e6611"
+                        },
+                        "background-color": "#107113",
+                        ":focus": {
+                        "background-color": "#0e6611"
+                        },
+                        "border-radius": "6px"
+                    },
+                    "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                    }
+                    },
+                    "buttonDestination": "checkout",
+                    "contents": {
+                    "img": false,
+                    "title": false,
+                    "price": false
+                    },
+                    "text": {
+                    "button": "Buy now"
+                    },
+                    "googleFonts": [
+                    "Roboto"
+                    ]
+                },
+                "productSet": {
+                    "styles": {
+                    "products": {
+                        "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                        }
+                    }
+                    }
+                },
+                "modalProduct": {
+                    "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                    },
+                    "styles": {
+                    "product": {
+                        "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                        }
+                    },
+                    "button": {
+                        "font-family": "Roboto, sans-serif",
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        ":hover": {
+                        "background-color": "#0e6611"
+                        },
+                        "background-color": "#107113",
+                        ":focus": {
+                        "background-color": "#0e6611"
+                        },
+                        "border-radius": "6px"
+                    },
+                    "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                    }
+                    },
+                    "googleFonts": [
+                    "Roboto"
+                    ],
+                    "text": {
+                    "button": "Add to cart"
+                    }
+                },
+                "option": {},
+                "cart": {
+                    "styles": {
+                    "button": {
+                        "font-family": "Roboto, sans-serif",
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        ":hover": {
+                        "background-color": "#0e6611"
+                        },
+                        "background-color": "#107113",
+                        ":focus": {
+                        "background-color": "#0e6611"
+                        },
+                        "border-radius": "6px"
+                    }
+                    },
+                    "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                    },
+                    "googleFonts": [
+                    "Roboto"
+                    ]
+                },
+                "toggle": {
+                    "styles": {
+                    "toggle": {
+                        "font-family": "Roboto, sans-serif",
+                        "background-color": "#107113",
+                        ":hover": {
+                        "background-color": "#0e6611"
+                        },
+                        ":focus": {
+                        "background-color": "#0e6611"
+                        }
+                    },
+                    "count": {
+                        "font-size": "18px"
+                    }
+                    },
+                    "googleFonts": [
+                    "Roboto"
+                    ]
+                }
+                },
+                    });
+                    });
+                }
+                })();
+                /*]]>*/
+                </script>
+            </div>
+        </div>
+    </section>
+    <div class="spacer-lg"></div>
     <div class="spacer"></div>
-    <img id="logo" src="assets/images/logo.png" alt="a logo that says harmony toolbox in a rounded rectangle">
-    <div class="spacer"></div>
-    <p>
-        Personal values affect us every day but can be hard to articulate and untangle from social norms.<br /><br />
-        Harmony toolbox is a booklet and kit of stationary with simple prompts that help you identify your personal values and incorporate them into your daily life. <br /><br />
-        We're currently in private alpha, but opening up to a private beta soon, sign up below to be notified when our beta opens. You'll receive an email with a link when it goes live in early-to-mid December.
-    </p>
-    <div class="spacer"></div>
+    <p style="text-align: center; margin: auto; width: 410px;">Harmony Toolbox is in closed beta right now, sign up if you'd like to receive udpates.</p>
+    <div class="spacer-extra-small"></div>
     <div id="mc_embed_signup">
         <form action="https://Harmonytoolbox.us20.list-manage.com/subscribe/post?u=4c6aac54f61ee135169ee2fe4&amp;id=853744052d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
