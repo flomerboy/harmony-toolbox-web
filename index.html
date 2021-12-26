@@ -113,6 +113,14 @@
             font-family:"Gooper-Regular";
         }
 
+        #story p {
+            width:800px;
+        }
+        a {
+            text-decoration: underline;
+            color: #107113;
+        }
+
         sup {
             font-size: 18px;
         }
@@ -130,7 +138,7 @@
         }
 
         #picking-flower {
-            width: 200px;
+            height: 200px;
         }
         .spacer-lg {
             height:150px;
@@ -269,14 +277,22 @@
 
         @media only screen and (max-width: 600px) {
             p {
-                max-width: 100vw;
-                padding-left: 6vw;
-                padding-right: 6vw;
+                max-width: 90vw;
                 font-size: 1.2rem;
             }
-            .button {
-                margin-left: 6vw;
+
+            #what-is p, #story p {
+                text-align: center;
             }
+
+            .shopify-buy__btn {
+                width: 90vw;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
             #logo {
                 width: 25vw;
             }
@@ -289,6 +305,22 @@
             .content-row {
                 flex-direction: column;
             }
+            .spacer-lg {
+            height:100px;
+            width: 100px;
+            }
+            .spacer {
+                height:75px;
+                width:75px;
+            }
+            .spacer-medium {
+                height:50px;
+                width:50px;
+            }
+            .spacer-small {
+                height:20px;
+                width:20px;
+            }
         }
 
     </style>
@@ -299,11 +331,11 @@
     <div class="spacer-small"></div>
     <h1><span class="special">B</span>ring clarity to your personal values</h1>
     <div class="spacer-lg"></div>
-    <div class="content-row">
+    <div class="content-row" id="what-is">
         <img id="picking-flower" src="assets/images/illo-picking-flower.png" />
         <div class="spacer-small"></div>
         <p>
-            Personal values affect us every day but can be hard to articulate. Once you do manage to articulate them, it&apos;s still hard to embody them fully. <br /><br />
+            <span class="special">P</span>ersonal values affect us every day but can be hard to articulate. Once you do manage to articulate them, it&apos;s still hard to embody them fully. <br /><br />
             The tools in Harmony Toolbox make it easier and more fun to articulate your values, and then weave them into your daily life.
         </p>
     </div>
@@ -330,15 +362,15 @@
     <div class="spacer-lg"></div>
     <section id="product-details">
         <img src="assets/images/sample-book.png" alt="">
-        <div class="spacer-small"></div>
+        <div class="spacer-extra-small"></div>
         <h2><span class="special">U</span>ncover and refine your values with the workbook</h2>
         <div class="spacer-lg"></div>
         <img src="assets/images/sample-card.png" alt="">
-        <div class="spacer-small"></div>
+        <div class="spacer-extra-small"></div>
         <h2><span class="special">T</span>ranslate those values into chunks of time with Activity Cards</h2>
         <div class="spacer-lg"></div>
         <img src="assets/images/sample-calendar.png" alt="">
-        <div class="spacer-small"></div>
+        <div class="spacer-extra-small"></div>
         <h2><span class="special">S</span>ee how your values show up in your daily life with the calendar</h2>
     </section>
     <div class="spacer-lg"></div>
@@ -359,6 +391,7 @@
                     - 1 Decision Helper workbook (16 pages)<br />
                     - 12 monthly calendars<br />
                     - 10 activity cards<br />
+                    - Access to our discord community<br />
                     - Dedicated 1-on-1 support
                 </p>
                 <div class="spacer-extra-small"></div>
@@ -546,7 +579,23 @@
     </section>
     <div class="spacer-lg"></div>
     <div class="spacer"></div>
-    <p style="text-align: center; margin: auto; width: 410px;">Harmony Toolbox is in closed beta right now, sign up if you'd like to receive udpates.</p>
+    <div class="content-row" id="story">
+        <div class="content-column">
+            <h2>
+                <span class="special" >A</span>bout<br /><br />
+            </h2>
+            <p>
+                Harmony Toolbox is made by me, <a href="https://ryancan.build">Ryan Mather</a>. As a twenty-something in New York I felt overwhelmed with all the possibilities for how to spend time. Should I draw? paint? learn to code? I started making tools to help me prioritize ideas. But the decisions I made in these early versions never quite stuck. My goals would change, or I'd lose interest. <br /><br />
+
+                I had a eureka moment when I took a class at the <a href="https://www.sfsd.io/">School for Social Design</a>, which taught me about personal values. I realized that <a href="https://vbsd.super.site/making-values-concrete">personal values</a> were the best tools to make these kinds of life decisions. I redesigned my tools to an early version of Harmony Toolbox, and I started feeling a lot better about my decisions, had a better time sticking to them, and feeling good about how I spent my time, starting new habits and ending the ones I didn't like. <br /><br />
+                
+                I wrote about my process for <a href="https://thecreativeindependent.com/tips/tips-for-how-to-prioritize-your-project-ideas/">The Creative Independent</a> and over the months following, I received mail from people all over the world who were trying out the tools in the article. But there were a lot of gaps in the article that made it It struck me that there was a need for a product that supported. And that's how Harmony Toolbox was born! You can check out some process on my <a href="https://www.instagram.com/stories/highlights/17888947154376393/" >instagram</a> highlights.
+            </p>
+        </div>
+    </div>
+    <div class="spacer-lg"></div>
+    <div class="spacer"></div>
+    <p style="text-align: center; margin: auto; width: 410px;">Harmony Toolbox is in closed beta right now, sign up if you'd like to receive updates.</p>
     <div class="spacer-extra-small"></div>
     <div id="mc_embed_signup">
         <form action="https://Harmonytoolbox.us20.list-manage.com/subscribe/post?u=4c6aac54f61ee135169ee2fe4&amp;id=853744052d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
