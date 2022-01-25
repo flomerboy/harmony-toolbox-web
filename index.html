@@ -196,7 +196,7 @@
             max-width: 90vw;
         }
 
-        #call-to-action img {
+        #call-to-action img, #pdf-version img {
             width: 650px;
             max-width: 90vw;
         }
@@ -205,11 +205,11 @@
             text-align: left;
         }
 
-        #call-to-action p {
+        #call-to-action p, #pdf-version p {
             width: 425px;
         }
         
-        #call-to-action .content-column {
+        #call-to-action .content-column, #pdf-version .content-column{
             align-items: flex-start;
         }
 
@@ -729,6 +729,209 @@
                 })();
                 /*]]>*/
                 </script>
+            </div>
+        </div>
+    </section>
+    <div class="spacer"></div>
+    <section id="pdf-version">
+        <div class="content-row">
+            <img src="assets/images/pdf-version.png" alt="">
+            <div class="spacer"></div>
+            <div class="content-column">
+                <h2><span class="special">H</span>armony Toolbox Digital edition</h2>
+                <h3>$14.99</h3>
+                <div class="spacer-extra-small"></div>
+                <p class="">Save some trees and space by choosing the fillable PDF version of Harmony Toolbox.
+                    <br /><br />
+                    What&apos;s Inside?<br />
+                    1 PDF containing: 
+                    - Uncovering Your Values workbook (76 pages)<br />
+                    - Decision Helper workbook (16 pages)<br />
+                    - 12 monthly calendars for 2022 to print out<br />
+                    - 10 activity cards to print out<br />
+                    - Access to our discord community<br />
+                    - Dedicated 1-on-1 support
+                </p>
+                <div class="spacer-extra-small"></div>
+                <div id='product-component-1643099460788'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'harmony-toolbox.myshopify.com',
+      storefrontAccessToken: 'c640f32accca3dbd21de7a6c0d2af74e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7503614116058',
+        node: document.getElementById('product-component-1643099460788'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "iframe":false,
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#0e6611"
+        },
+        "background-color": "#107113",
+        ":focus": {
+          "background-color": "#0e6611"
+        },
+        "border-radius": "6px"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      }
+    },
+    "buttonDestination": "checkout",
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Buy now"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#0e6611"
+        },
+        "background-color": "#107113",
+        ":focus": {
+          "background-color": "#0e6611"
+        },
+        "border-radius": "6px"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#0e6611"
+        },
+        "background-color": "#107113",
+        ":focus": {
+          "background-color": "#0e6611"
+        },
+        "border-radius": "6px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#107113",
+        ":hover": {
+          "background-color": "#0e6611"
+        },
+        ":focus": {
+          "background-color": "#0e6611"
+        }
+      },
+      "count": {
+        "font-size": "18px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
             </div>
         </div>
     </section>
